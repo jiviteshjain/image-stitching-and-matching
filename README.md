@@ -1,19 +1,22 @@
-[![Generic badge](https://img.shields.io/badge/CV-Assignment:2-BLUE.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/DUE-23:59hrs,21/02/2021-RED.svg)](https://shields.io/)
-# Assignment-2
-The goal of this assignment is to familiarize you with Image mosaicing and Stereo correspondence problem.
+# Image Mosaicing and Stereo Correspondences
 
-Please raise doubts on the appropriate assignment thread on moodle.
+This software stitches together images taken from the same spot with different camera orientations by estimating a homography between them. This is roughly how your phone takes a panorama. Further, it explores the stereo-matching problem, trying out approaches and comparing results. See the notebook for more details.
 
-# Instructions
-- Follow the directory structure as shown below: 
-  ```
-  ├── src           
-        ├── Assignment2.ipynb
-  ├── images            //your images
-  └── README.md
-  ```
-- `src` will contain the Jupyter notebook(s) used for the assignment.
-- `images` will contain images used for the questions.
-- Follow this directory structure for all following assignments in this course.
-- **Make sure you run your Jupyter notebook before committing, to save all outputs.**
+<p align="center">
+<img src="https://user-images.githubusercontent.com/43912285/120064582-8556a500-c08a-11eb-94ab-ea78692f9f3a.png" width=300/>
+</p>
+
+## To run
+*All commands to be run from the repository root.*  
+
+1. Install python packages from the Python Package Index (preferably in a virtual environment).
+   ```(shell)
+   python3 -m venv env && source env/bin/activate # optional
+   pip install -r requirements.txt
+   ```
+2. Run the notebook on a jupyter server.
+   ```(shell)
+   jupyter notebook
+   ```
+   Open `src/matching.ipynb` in the web browser window.
+
